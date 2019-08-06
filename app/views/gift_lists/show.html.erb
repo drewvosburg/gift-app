@@ -1,4 +1,6 @@
 <p id="notice"><%= notice %></p>
-
+<h2><%= @gift_list.title %></h2>
+<p><%= @gift_list.event_date.strftime("%B #{@gift_list.event_date.day.ordinalize}") %></p>
+<p><%= @gift_list.description %></p>
 <%= link_to 'Edit', edit_gift_list_path(@gift_list) %> |
 <%= link_to 'Back', gift_lists_path %>
